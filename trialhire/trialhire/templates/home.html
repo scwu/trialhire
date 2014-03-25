@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body_class %}{{ block.super }} home{% endblock %}
+{% block css %} 
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/specific.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+    <!-- Add your site or application content here -->
+ <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Trial</span>Hire
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#page-top">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">How It Works</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#signup">Signup</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro" id="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Interview right, HIRE BETTER</h1>
+                        <p class="intro-text"><img src="{{ STATIC_URL }}img/intro.png"/></p>
+ <a href="#signup" class="btn btn-default btn-lg">Sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+          <div class="col-md-8" id="terminal">
+            <img src="{{ STATIC_URL }}img/terminal.png"/>
+          </div>
+            <div class="col-md-4">
+                <h2>How it works</h2>
+                <p>1. Give your candidate a challenge of your choice.</p>
+                <p>2. We'll lead them through the interview process and collect all the information you need - on our time, not yours.</p>
+                <p>3. We'll let you know when they've finished and you can replay their interview as well as evaluate their final results.</p>
+                <p>Stop worrying about the process and hire only the best!</p>
+            </div>
+        </div>
+<div class="page-scroll">
+                            <a href="#signup" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+
+    </section>
+
+    <section id="signup" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Sign up here</h2>
+                    <p>Sign up below and we'll be in touch.</br>If you have any questions - you can email us <a href="mailto:sclarawu@gmail.com?Subject=TrialHire" target="_top">here</a>.</p>
+
+                    <form action="https://docs.google.com/forms/d/1udFJTtZkjq5JJNteUS4BGBzi-XLQybrjrsU7Wr4715M/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><div role="list">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text"><div class="ss-form-entry"><label aria-hidden="true" class="ss-q-item-label" for="entry_1000017874"><div class="ss-q-title">
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="email" id="email" placeholder="enter your email address" name="entry.1000017874" value="" class="ss-q-short input-lg form-control" id="entry_1000017874" dir="auto" aria-label="email address  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address">
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-588793370410787069&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fromEmail" value="false">
+
+<input type="hidden" name="fbzx" value="-588793370410787069">
+
+<input type="submit" class="btn btn-lg btn-default"name="submit" value="Sign up" id="ss-submit">
+</div></form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+    
+{% block javascript %}
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ STATIC_URL }}js/specific.js"></script>
+
+{% endblock %}
