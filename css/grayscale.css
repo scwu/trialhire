@@ -60,7 +60,6 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #212933;
 }
 
 .navbar-brand {
@@ -91,7 +90,6 @@ a:focus {
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: white;
 }
 
 .navbar-toggle:focus,
@@ -216,7 +214,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: white;
     background: rgba(255,255,255,.1);
 }
 
