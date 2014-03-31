@@ -52,10 +52,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Interview right, HIRE BETTER</h1>
                         <p class="intro-text">
-                          <embed
-                          width="420" height="345"
-                          src="https://www.youtube.com/watch?v=IatJYenXA2k">
-                         </embed>
+                        <p class="intro-text"><img src="{{ STATIC_URL }}img/intro.png"/>
                         </p>
  <a href="#signup" class="btn btn-default btn-lg">Sign up now</a>
                     </div>
@@ -66,11 +63,14 @@
 
     <section id="about" class="container content-section text-center">
         <div class="row">
-          <div class="col-md-8" id="terminal">
-            <img src="{{ STATIC_URL }}img/terminal.png"/>
+          <div class="col-md-12" id="heading">
+              <h2>How it works</h2>
           </div>
-            <div class="col-md-4">
-                <h2>How it works</h2>
+          <div class="col-md-12" id="terminal">
+            <iframe width="853" height="480" src="//www.youtube.com/embed/IatJYenXA2k?rel=0" frameborder="0" allowfullscreen></iframe>
+            <!-- <img src="{{ STATIC_URL }}img/terminal.png"/>-->
+          </div>
+            <div class="col-md-12" id="explain">
                 <p>1. Give your candidate a challenge of your choice.</p>
                 <p>2. We'll lead them through the interview process and collect all the information you need - on our time, not yours.</p>
                 <p>3. We'll let you know when they've finished and you can replay their interview as well as evaluate their final results.</p>
