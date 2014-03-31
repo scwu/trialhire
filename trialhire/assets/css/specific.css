@@ -97,7 +97,7 @@ a:focus {
     outline: 0;
 }
 
-#about h2, #about p, #about a, #about .btn {
+#about h1, #about p, #about a, #about .btn {
   color: #212933;
   border: #212933;
 }
@@ -108,8 +108,8 @@ a:focus {
 }
 
 #about #terminal {
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 #signup input#email {
@@ -117,6 +117,9 @@ a:focus {
   margin: 0 auto;
 }
 
+#about #explain {
+  text-align: left;
+}
 #ss-item {
   width: 100%;
 }
