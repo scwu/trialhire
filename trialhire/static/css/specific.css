@@ -104,12 +104,19 @@ a:focus {
 
 #about img {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 #about #terminal {
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#about #explain {
+  text-align: left;
+}
+
+#about #heading {
+  margin-top: -50px;
 }
 
 #signup input#email {
