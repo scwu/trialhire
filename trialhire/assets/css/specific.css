@@ -97,14 +97,13 @@ a:focus {
     outline: 0;
 }
 
-#about h1, #about p, #about a, #about .btn {
+#about h2, #about p, #about a, #about .btn {
   color: #212933;
   border: #212933;
 }
 
 #about img {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 #about #terminal {
@@ -112,14 +111,22 @@ a:focus {
   margin-bottom: 100px;
 }
 
+#about #explain {
+  text-align: left;
+}
+
+#about #heading {
+  margin-top: -50px;
+}
+
+#about #heading h1 {
+  color: black;
+}
 #signup input#email {
   max-width: 400px;
   margin: 0 auto;
 }
 
-#about #explain {
-  text-align: left;
-}
 #ss-item {
   width: 100%;
 }
@@ -296,7 +303,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 250px;
     }
 
     .download-section {
@@ -318,15 +325,9 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
-.btn-sign-up {
+.btn-default {
     border: 1px solid #e74b3c;
     color: #e74b3c;
-    background-color: transparent;
-}
-
-.btn-watch-video {
-    border: 1px solid #24CE4D;
-    color: #24CE4D;
     background-color: transparent;
 }
 

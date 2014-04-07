@@ -119,6 +119,10 @@ a:focus {
   margin-top: -50px;
 }
 
+#about #heading h1 {
+  color: black;
+}
+
 #signup input#email {
   max-width: 400px;
   margin: 0 auto;
@@ -335,6 +339,22 @@ a:focus {
     color: #000;
     background-color: #e74b3c;
 }
+
+.btn-primary {
+    border: 1px solid #28c3ab;
+    color: #28c3ab;
+    background-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    border: 1px solid #28c3ab;
+    outline: 0;
+    color: #000;
+    background-color: #28c3ab;
+}
+
+
 
 .btn-huge {
     padding: 25px;
