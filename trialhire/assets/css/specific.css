@@ -296,7 +296,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 200px;
     }
 
     .download-section {
@@ -318,9 +318,15 @@ a:focus {
     transition: all .3s ease-in-out;
 }
 
-.btn-default {
+.btn-sign-up {
     border: 1px solid #e74b3c;
     color: #e74b3c;
+    background-color: transparent;
+}
+
+.btn-watch-video {
+    border: 1px solid #24CE4D;
+    color: #24CE4D;
     background-color: transparent;
 }
 
