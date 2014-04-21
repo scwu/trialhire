@@ -9,5 +9,6 @@ urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
 
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^editor/', TemplateView.as_view(template_name='editor.html'), name='editor'),
     url(r'^admin/', include(admin.site.urls)),
 )

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body_class %}{{ block.super }} home{% endblock %}
+{% block css %} 
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <style>
+    #editor { 
+        position: absolute;
+        top: 10%;
+        right: 50%;
+        bottom: 0;
+        left: 0;
+    }
+  </style>
+{% endblock %}
+
+
+{% block content %}
+    <!-- Add your site or application content here -->
+ <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Trial</span>Hire
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#intro-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#intro">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">How It Works</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#signup">Signup/Pricing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro" id="intro">
+      <div id="editor">function foo(items) {
+    var x = "All this is syntax highlighted";
+    return x;
+    }</div>
+    </section>
+
+    <section id="about" class="container content-section text-center">
+
+    </section>
+{% endblock %}
+    
+{% block javascript %}
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ STATIC_URL }}js/vendor/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/solarized_dark");
+    editor.getSession().setMode("ace/mode/python");
+    document.getElementById('editor').style.fontSize='14px';
+  </script>
+    <script src="{{ STATIC_URL }}js/specific.js"></script>
+
+{% endblock %}
